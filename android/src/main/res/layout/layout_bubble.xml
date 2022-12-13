@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="center">
+
+    <androidx.cardview.widget.CardView
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="@android:color/transparent"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        app:cardBackgroundColor="#E26A2C"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+
+        android:foregroundGravity="center"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="8dp">
+
+
+        <ImageView
+            android:id="@+id/bubble_image_bottom"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@android:drawable/sym_def_app_icon"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/bubble_image_top"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/sym_def_app_icon"
+            tools:ignore="ContentDescription" />
+<!--        <TextView-->
+<!--            android:id="@+id/bubble_custom_text_top"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="20dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:gravity="center"-->
+<!--            android:text=""-->
+<!--            android:textAppearance="@android:style/TextAppearance"-->
+<!--            tools:ignore="ContentDescription" />-->
+
+
+
+        <TextView
+            android:id="@+id/bubble_custom_text_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            tools:ignore="ContentDescription" />
+        <TextView
+            android:id="@+id/bubble_custom_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            tools:ignore="ContentDescription" />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/bubble_custom_text_top"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_background"
+        android:elevation="16dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="3"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        tools:ignore="ContentDescription" />
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
